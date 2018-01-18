@@ -17,7 +17,11 @@
     "update": "npm prune && npm run update && npm run test-integration",
     "clean-up": "standard --fix --verbose; ./node_modules/.bin/eslint --fix --debug *.js"
   },
-  "author": "Gary A. Stafford",
+  "author": {
+    "name" : "Gary A. Stafford",
+    "email" : "garystafford@rochester.rr.com",
+    "url" : "https://programmaticponderings.com"
+  },
   "repository": "https://github.com/garystafford/lambda-cookbook/tree/master/cookbook/nasa-api",
   "license": "ISC",
   "devDependencies": {
