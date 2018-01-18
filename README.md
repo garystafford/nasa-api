@@ -1,6 +1,6 @@
 # NASA API Serverless Demo
 
-Used to access NASA's public APIs, and used for an upcoming AWS Serverless API article.
+Demonstrates Claudia.js, Claudia API Builder, AWS API Gateway, and AWS Lambda to access NASA's public APIs.
 
 Requires your own personal [NASA API Key](https://api.nasa.gov/index.html#apply-for-an-api-key).
 
