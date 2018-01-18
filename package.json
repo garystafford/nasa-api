@@ -1,0 +1,38 @@
+{
+  "name": "nasa-api",
+  "version": "1.1.0",
+  "description": "NASA Open API Lambda Demo with Claudia.js API Builder",
+  "main": "index.js",
+  "scripts": {
+    "start": "ntl",
+    "deploy": "claudia create --region us-east-1 --api-module index",
+    "release": "claudia set-version --version production",
+    "test-syntax": "standard --verbose",
+    "test-lint": "./node_modules/.bin/eslint *.js",
+    "test-integration": "sh ./tests.sh",
+    "test-sonar": "sonar-scanner",
+    "test": "npm run test-syntax && npm run test-lint",
+    "load-from-json-dev": "claudia set-version --version dev --set-env-from-json ./config/dev.json",
+    "load-from-json-prod": "claudia set-version --version dev --set-env-from-json ./config/prod.json",
+    "update": "npm prune && npm run update && npm run test-integration",
+    "clean-up": "standard --fix --verbose; ./node_modules/.bin/eslint --fix --debug *.js"
+  },
+  "author": "Gary A. Stafford",
+  "repository": "https://github.com/garystafford/lambda-cookbook/tree/master/cookbook/nasa-api",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "ntl": "^1.2.0",
+    "standard": "^10.0.3"
+  },
+  "dependencies": {
+    "claudia-api-builder": "^3.0.1",
+    "nasa-api-module": "^1.1.0"
+  }
+}

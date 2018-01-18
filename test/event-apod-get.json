@@ -1,0 +1,6 @@
+{
+  "requestContext": {
+    "resourcePath": "/apod",
+    "httpMethod": "GET"
+  }
+}

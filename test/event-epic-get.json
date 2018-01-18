@@ -1,0 +1,6 @@
+{
+  "requestContext": {
+    "resourcePath": "/epic",
+    "httpMethod": "GET"
+  }
+}

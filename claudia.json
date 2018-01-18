@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "nasa-api-executor",
+    "name": "nasa-api",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "03kryacc0f",
+    "module": "index"
+  }
+}
